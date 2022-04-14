@@ -1,0 +1,33 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#shop_now {
+    padding-bottom: 130px;
+
+    .shop_now_bg {
+        background: url(../images/shop_now_bg.png) no-repeat center / cover;
+        padding: 65px 0;
+
+        .shop_now_text {
+            padding: 0 74px  0 60px;
+            h3 {
+                @include fs(20px, 500);
+                color: #282828;
+            }
+            h2 {
+                @include fs(20px, 700);
+                color: #282828;
+                padding: 20px 0 15px;
+                line-height: auto;
+            }
+
+            .btn_btn {
+                a {
+                    color: $secondary-color;
+                    @include fs(20px, 600);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

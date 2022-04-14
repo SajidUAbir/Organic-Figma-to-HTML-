@@ -1,0 +1,88 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#makes_us_different {
+    padding-top: 130px;
+
+    .makes_us_different_head {
+        h3 {
+            @include fs(16px, 400);
+            color: #676767;
+        }
+        h2 {
+            @include fs(35px, 700);
+            color: #282828;
+            padding: 20px 0 30px;
+        }
+        p {
+            @include para();
+            line-height: 30px;
+        }
+    }
+
+    .makes_us_different_main {
+        padding-top: 50px;
+
+        .navigation {
+            .nav {
+                gap: 30px;
+                
+            }
+            .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+                background-color: $secondary-color;
+                color: #fff;
+                @include fs(20px, 500);
+                padding: 20px 0 20px 90px;
+                border-radius: 20px;
+                
+            }
+
+            .nav-link {
+                color: #676767;
+                @include fs(20px, 500);
+                text-align: left;
+                border-radius: 20px;
+                padding: 20px 0 20px 90px;
+            }
+        }
+
+        .makes_us_different_text {
+            h3 {
+                @include fs(20px, 500);
+                color: #676767;
+            }
+            h2 {
+                @include fs(25px, 700);
+                color: #282828;
+                padding: 20px 0 30px;
+            }
+            
+            p {
+                @include para();
+                line-height: 30px;
+            }
+
+            .bullet_point {
+                padding-top: 25px;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    li {
+                        @include para();
+                        line-height: 30px;
+                        display: flex;
+                        gap: 10px;
+
+                        .icon {
+                            font-size: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

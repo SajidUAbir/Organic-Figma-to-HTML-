@@ -1,0 +1,41 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#banner {
+    background: url(../images/banner.jpg) no-repeat center / cover ;
+    padding: 300px 0;
+
+    .ban_text {
+        h1 {
+        font-weight: 700;
+        font-size: 75px;
+        line-height: 91px;
+        padding-bottom: 20px;
+
+        }
+
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            padding-bottom: 30px;
+            
+        }
+
+        span {
+            color: $secondary-color;
+        }
+
+        .ban_btn {
+            a {
+            @include btn();
+            padding: 10px 30px;
+            }
+        }
+    }
+}
+
+
+
+
+

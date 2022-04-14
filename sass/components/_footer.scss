@@ -1,0 +1,109 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#footer {
+    background-color: #373C33;
+    padding: 135px 0;
+
+    .footer_head {
+        color: #fff;
+        padding-bottom: 35px;
+        h3 {
+            @include fs(20px, 600);
+        }
+    }
+
+    .footer_item {
+        padding-bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        ul  {
+            li {
+                a {
+                    color: #fff;
+                    @include fs(16px, 400);
+                }
+            }
+        }
+        
+        .contact_dtl {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            color: #fff;
+
+            i {
+                @include is(60px, 50%);
+                background-color: $primary-color;
+                color: #fff;
+                font-size: 25px;
+            }
+
+            .contact_text {
+                p {
+                    @include fs(16px, 400);
+                    padding-bottom: 15px;
+                }
+
+                h3 {
+                    @include fs(20px, 500);
+                }
+            }
+        }
+
+        .contact_dtl_right {
+            // i {
+            //     width: 80px;
+            //     height: 60px;
+            // }
+            .contact_text {
+                h3 {
+                    @include fs(20px, 500);
+                    line-height: 28px;
+                }
+
+            }
+            
+        }
+
+
+        
+        
+    }
+
+    .footer_item_4 {
+        color: #fff;
+
+        p {
+            color: #fff;
+        }
+
+        .input_field {
+            position: relative;
+            input {
+                border-radius: 10px;
+                border: none;
+                padding: 15px 15px;
+                width: 100%;
+            }
+
+            .sub_btn {
+                a {
+                    background-color: $secondary-color;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-family: $ff1;
+                    font-weight: 500;
+                    font-size: 20px;
+                    border-radius: 10px;
+                    padding: 12px 15px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

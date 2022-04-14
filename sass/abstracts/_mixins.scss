@@ -1,0 +1,74 @@
+@mixin p_center(){
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin btn {
+    background-color: $primary-color;
+    border-radius: 10px;
+    color: #fff;
+    font-family: $ff1;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+
+
+@mixin para {
+    color: $para;
+    font-family: $ff1;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@mixin fs($fz, $fw) {
+    font-family: $ff1;
+    font-weight: $fw;
+    font-size: $fz;
+}
+
+@mixin p_lt {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@mixin before_lt($t, $l){
+    content: '';
+    position: absolute;
+    top: $t;
+    left: $l;
+}
+@mixin p_rt {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+// @mixin p_lb {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+// }
+// @mixin p_rb {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+// }
+
+// icon style
+@mixin is($v, $bdrr) {
+    width: $v;
+    height: $v;
+    line-height: $v;
+    text-align: center;
+    border-radius: $bdrr;
+}
+@mixin is_cus($v, $bdrr) {
+    width: $v;
+    height: $v;
+    text-align: center;
+    border-radius: $bdrr;
+}
+

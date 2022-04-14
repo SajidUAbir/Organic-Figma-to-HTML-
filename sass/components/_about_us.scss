@@ -1,0 +1,44 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#about_us {
+    padding: 75px 0 130px;
+
+    .about_us_text {
+        h3 {
+            @include fs(20px, 500);
+            color: #676767;
+        }
+        h2 {
+            @include fs(35px, 700);
+            padding: 20px 0 30px;
+        }
+        p {
+            @include para();
+            line-height: 30px;
+        }
+        span {
+            @include para();
+            line-height: 30px;
+        }
+
+        .person_info {
+            padding-top: 30px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+
+            .person_info_right {
+
+                h3 {
+                    @include fs(20px, 500);
+                    color: #282828;
+                }
+                p {
+                    @include fs(16px, 400);
+                    color: #676767;
+                }
+            }
+        }
+    }
+}

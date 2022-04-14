@@ -1,0 +1,61 @@
+.navbar_main {
+    padding: 10px 0;
+
+
+
+    .navbar-nav .nav-link {
+        color: #282828; 
+    }
+
+    .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+        color: #477018;
+    }
+
+    .btn {
+         padding: 0; 
+        color: #282828; 
+    }
+
+
+   .nav_iocn {
+    gap: 20px;
+
+    .fa-bag-shopping {
+        color: #444;
+    }
+
+    .search {
+        position: relative;
+
+        form {
+            input {
+                width: 100%;
+                outline: 0;
+                border: 1px solid #d1d1d1;
+                border-radius: 10px;
+                padding: 8px 10px;
+            }
+        }
+
+        i {
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #222;
+            z-index: 1;
+
+            &:hover input {
+                width: 100%;
+                border: 1px solid #f1f1f1;
+
+            }
+        }
+    }
+   }
+
+   
+}
+
+    
+

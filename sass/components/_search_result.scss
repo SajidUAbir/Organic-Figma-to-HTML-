@@ -1,0 +1,57 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.search_result_main {
+    padding-bottom: 50px;
+    
+    .search_result_message {
+        display: flex;
+        flex-direction: column;
+        
+        h3 {
+            @include fs(25px, 700);
+            color: #282828;
+            padding-bottom: 10px;
+            
+        }
+
+        p {
+           align-self: center;
+           margin-left: 194px;
+        }
+    }
+
+    .filter_dropdown {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .dropdown-toggle {
+            white-space: nowrap;
+            border: 1px solid #676767;
+            padding: 10px 30px;
+            color: #676767;
+            border-radius: 10px;
+        }
+
+        .btn-check:focus+.btn, .btn:focus {
+             box-shadow: none; 
+        }
+    }
+
+    .layout_icon_main {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+    }
+
+    .layout_icon {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        i {
+            font-size: 20px;
+        }
+    }
+}

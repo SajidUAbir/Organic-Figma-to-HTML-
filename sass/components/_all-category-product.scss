@@ -1,0 +1,110 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#all-category-product {
+
+    .all-category-product-head {
+        padding: 130px 0 60px;
+        .nav {
+            padding-left: 171px;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            color: $secondary-color;
+            background-color: #fff;
+            @include fs(16px, 700)
+        }
+
+        .nav-link {
+            color: #222;
+        }
+    }
+
+    .featured_item {
+        .all-category-product-icon {
+            padding: 30px 0 15px;
+
+            i {
+                color: $secondary-color;
+            }
+        }
+        
+        .featured_img {
+            position: relative;
+            background-color: #fafafa;
+
+            .featured_overly {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 1;
+
+                .featured_overly_icon {
+                   position: absolute;
+                   bottom: 5%;
+                   left: 50%;
+                   transform: translateX(-50%);
+                   -webkit-transform: translateX(-50%);
+                   -moz-transform: translateX(-50%);
+                   -ms-transform: translateX(-50%);
+                   -o-transform: translateX(-50%);
+                   display: flex;
+                   gap: 15px;
+                   opacity: 0;
+                   transition: 0.5s;
+                        -webkit-transition: 0.5s;
+                        -moz-transition: 0.5s;
+                        -ms-transition: 0.5s;
+                        -o-transition: 0.5s;
+
+                    i {
+                        width: 47px;
+                        height: 47px;
+                        line-height: 47px;
+                        background-color: #fff;
+                        color: #000;
+                        border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        transition: 0.5s;
+                        -webkit-transition: 0.5s;
+                        -moz-transition: 0.5s;
+                        -ms-transition: 0.5s;
+                        -o-transition: 0.5s;
+
+                        &:hover {
+                            background-color: $secondary-color;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+                &:hover .featured_overly_icon{
+                    opacity: 1;
+                }
+            }
+        }
+        
+
+        .featured_icon {
+            padding-top: 30px;
+
+            i {
+                color: #ffae00;
+            }
+        }
+
+        p {
+            padding: 15px 0;
+        }
+
+        h3 {
+            @include fs(20px, 500);
+        }
+    }
+}

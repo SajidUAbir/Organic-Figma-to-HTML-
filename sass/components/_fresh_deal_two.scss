@@ -1,0 +1,142 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#fresh_deal_two {
+    padding: 130px 0;
+
+    .head {
+        padding-bottom: 50px;
+
+        h2 {
+            @include fs(35px, 700)
+        }
+    }
+
+    .fresh_deal_item {
+        img {
+            width: 100%;
+        }
+       .fesh_deal_text {
+           background-color: #F7F7F7;
+
+            .count__down {
+
+                display: flex;
+                gap: 20px;
+                justify-content: center;
+        
+                .days {
+                    background-color: #fff;
+                    color: $secondary-color;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    
+                    .js-days {
+                        @include fs(20px, 600)
+                    }
+                    
+                    p {
+                        @include fs(20px, 700)
+                    }
+                }
+    
+                .hours {
+                    background-color: #fff;
+                    color: $secondary-color;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    
+                    .js-hours {
+                        @include fs(20px, 600)
+                    }
+                    
+                    p {
+                        @include fs(20px, 700)
+                    }
+                }
+    
+                .minutes {
+                    background-color: #fff;
+                    color: $secondary-color;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    
+                    .js-minutes {
+                        @include fs(20px, 600)
+                    }
+                    
+                    p {
+                        @include fs(20px, 700)
+                    }
+                }
+    
+                .seconds {
+                    background-color: #fff;
+                    color: $secondary-color;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    
+                    .js-seconds {
+                        @include fs(20px, 600)
+                    }
+                    
+                    p {
+                        @include fs(20px, 700)
+                    }
+                }
+            }
+
+            h2 {
+                color: #282828;
+                @include fs(25px, 600);
+                padding-top: 30px;
+            }
+
+           .icon {
+               padding: 25px 0 10px;
+            i {
+                color: #FFAE00;
+            }
+           }
+
+            h3 {
+                color: #282828;
+                @include fs(25px, 700)
+            }
+            
+
+        .btn_btn {
+            padding:30px 0 50px;
+          a {
+            background-color: $secondary-color;
+            color: #fff;
+            font-family: $ff1;
+            font-weight: 500;
+            font-size: 20px;
+            padding: 10px 40px;
+          }
+        }
+       }
+    }
+
+}

@@ -1,0 +1,89 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+/* ===============================
+     trending products begin
+================================ */
+#product_cat {
+//     position: relative;
+
+     .product_cat_1 {
+          position: relative;
+
+          .bg {
+               position: absolute;
+               top: 0;
+               left: 0;
+               z-index: 1;
+               background: url(../images/cat_bg.png) no-repeat center / cover;
+               padding: 460px 0;
+               min-width: 31%;
+               border-radius: 0px 20px 20px 0px;
+          }
+     }
+
+
+     .product_cat_head {
+          padding-bottom: 70px;
+
+          .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+               position: relative;
+               color: #282828;
+               background-color: #fff;
+
+               @include fs(25px, 700);
+
+               &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    width: 123px;
+                    height: 2px;
+                    background-color: $secondary-color;
+                    transform: translateX(-50%)
+               }
+          }
+
+          .nav-pills .nav-link {
+               @include fs(25px, 700);
+               color: #282828;
+          }
+     }
+
+     .product_cat_main {
+          img {
+               width: 100%;
+          }
+          h3 {
+               @include fs(20px, 600);
+               color: #282828;
+               padding: 10px 0;
+          }
+
+          p {
+               @include fs(20px, 600);
+               color: #969696;
+          }
+     }
+
+     .product_cat_2 {
+          margin: 130px 0;
+
+          position: relative;
+
+          .bg {
+               position: absolute;
+               top: 0;
+               right: 0;
+               z-index: 1;
+               background: url(../images/cat_bg.png) no-repeat center / cover;
+               padding: 460px 0;
+               min-width: 31%;
+               border-radius: 20px 0px 0px 20px;
+          }
+     }
+}
+/* ===============================
+     trending products begin
+================================ */

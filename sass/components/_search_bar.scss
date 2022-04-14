@@ -1,0 +1,72 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.search_full {
+    padding-bottom: 50px;
+
+    .search_main {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        
+        
+
+        .search_product {
+            position: relative;
+
+            input {
+                border: 1px solid #f1f1f1;
+                border-radius: 10px;
+                outline: 0;
+                
+                width: 364px;
+                // padding: 10px 0;
+                height: 56px;
+
+                &[placeholder] {
+                    padding: 10px 20px;
+                }
+            }
+
+            .Search_icon {
+                position: absolute;
+                right: 5%;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .drowdown_item  {
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: center;
+
+        .layout_icon {
+            display: flex;
+            gap: 20px;
+
+            img {
+                
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .filter_dropdown {
+
+            .dropdown-toggle {
+                white-space: nowrap;
+                border: 1px solid #676767;
+                padding: 10px 30px;
+                color: #676767;
+                border-radius: 10px;
+            }
+            .btn-check:focus+.btn, .btn:focus {
+                box-shadow: none; 
+           }
+        }
+    }
+}

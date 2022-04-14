@@ -1,0 +1,133 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+/* ===============================
+     trending products begin
+================================ */
+
+#products__category {
+    .products__category__head {
+        
+
+        h2 {
+            @include fs(35px, 700);
+            padding-bottom: 50px;
+        }
+    }
+
+    .nav__btn {
+        background-color: #FAFAFA;
+        border-radius: 20px;
+        padding: 37px 20px 37px;
+        button {
+            text-align: left;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            background-color: #FAFAFA;
+            h3 {
+                @include fs(18px, 600);
+                color: $secondary-color;
+            }
+           
+        }
+
+        .btn_tile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            h3 {
+            color: #282828;
+            @include fs(18px, 600)
+            }
+        }
+
+        button {
+            color: #282828;
+            @include fs(18px, 600)
+        }
+    }
+
+    .shop_now_btn {
+        background: url(../images/shop_now.png) no-repeat center / cover;
+        padding: 38px 30px 182px;
+        border-radius: 20px;
+
+        h3 {
+            @include fs(25px, 700);
+            color: #282828;
+            // line-height: 20px;
+        }
+        p {
+            @include para();
+            line-height: 28px;
+            padding: 18px 0 40px;
+        }
+
+        .btn__btnn {
+            a {
+                @include fs(20px, 600);
+                color: $secondary-color;
+                text-decoration: underline;
+            }
+        }
+    }
+    
+
+    .products_item {
+
+        .products__item__img {
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+            
+
+            .products__item__overly {
+                @include  p_lt();
+                width: 100%;
+                height: 100%;
+                background-color: #282828cc;
+                opacity: 0;
+                transition: 0.5s;
+                border-radius: 20px;
+                
+
+                ul {
+                    @include  p_center();
+                    display: flex;
+                    gap: 20px;
+                    li {
+                        a {
+                            i {
+                                background-color: #fff;
+                                color: $secondary-color;
+                                @include is(50px,50%)
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            @include fs(20px, 600);
+            padding: 20px 0 12px;
+        }
+        p {
+            @include fs(20px, 600);
+            color: #969696;
+        }
+        
+
+        &:hover  .products__item__overly {
+            opacity: 1;
+        }
+    }
+}
+
+/* ===============================
+     trending products end
+================================ */

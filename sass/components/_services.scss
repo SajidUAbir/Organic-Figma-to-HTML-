@@ -1,0 +1,95 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#service {
+    padding: 120px 0;
+    position: relative;
+    
+    
+
+    .service_item {
+        border: 0.5px solid #C9C9C9;
+        padding: 77px 0;
+        border-radius: 10px;
+        margin-bottom: 120px;
+        
+        h2 {
+            @include fs(25, 500);
+            
+        }
+
+        p {
+            @include fs(25, 500);
+        }
+
+    }
+
+   
+    
+   
+
+    .main_fruit {
+        // padding-top: 120px;
+        position: relative;
+        
+        .fruit_list {
+            .slick-slide {
+                margin-left: 10px;
+            }
+            
+            .fruit_item  {
+                // background-color: yellowgreen;
+                display: inline-block;
+                margin: 0 15px;
+
+                img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+        }
+    
+    
+        .ser_prev {
+            background-color: #FAFAFA;
+            color: #000;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            transform: translateY(-50%);
+            border-radius: 50%;
+
+            &:hover {
+                background: $secondary-color;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        }
+        .ser_next {
+            background-color:#FAFAFA;
+            color: #000;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            text-align: center;
+            transform: translateY(-50%);
+            border-radius: 50%;
+
+            &:hover {
+                background: $secondary-color;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        }
+    }
+   
+}

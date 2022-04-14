@@ -1,0 +1,53 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#testimonials {
+    padding: 130px 0;
+
+    .testi_head {
+        padding-bottom: 50px;
+
+        a {
+            color: #676767;
+            @include para();
+        }
+    }
+
+    .test_item {
+        border: 1px solid #C9C9C9;
+        padding: 50px 40px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+
+        img {
+            padding-bottom: 30px;
+        }
+
+        p {
+            @include para();
+            line-height: 28px;
+        }
+
+        .testi_person {
+            padding-top: 30px;
+            display: flex;
+            gap: 30px;
+            
+            .testi_info {
+                // display: inline-block;
+                // margin-left: 20px;
+
+                h3 {
+                    @include fs(20px, 500)
+                }
+            }
+        }
+    }
+
+    .item_pless {
+        padding: 10px 40px;
+    }
+}

@@ -1,0 +1,35 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#live_healthy {
+    
+
+    .live_healthy_bg {
+    background: url('../images/Rectangle 3073.png') no-repeat center / cover;
+    padding: 90px 0;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    .live_healthy_text{
+        h2 {
+            @include fs(45px, 700);
+        }
+
+        p {
+            @include para();
+            padding: 35px 0;
+            line-height: 28px;
+        }
+    }
+
+    .live_healthy_btn {
+        a {
+        @include btn();
+        padding: 10px 30px;
+        }
+    }
+ }
+}

@@ -1,0 +1,132 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#deal-of-the-week {
+    padding: 130px 0;
+
+    .dotw-item {
+        padding-bottom: 50px;
+        h2 {
+            @include fs(35px, 700);
+            color: #282828;
+        }
+        .count__down {
+            display: flex;
+            gap: 30px;
+            text-align: center;
+            
+            justify-content: flex-end;
+           
+            .days {
+                background-color: $secondary-color;
+                color: #fff;
+                width: 70px;
+                height: 70px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                
+                .js-days {
+                    @include fs(20px, 600)
+                }
+                
+                p {
+                    @include fs(20px, 700)
+                }
+            }
+
+            .hours {
+                background-color: #F9F9F9;
+                color: $secondary-color;
+                width: 70px;
+                height: 70px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                
+                .js-hours {
+                    @include fs(20px, 600)
+                }
+                
+                p {
+                    @include fs(20px, 700)
+                }
+            }
+
+            .minutes {
+                background-color: $secondary-color;
+                color: #fff;
+                width: 70px;
+                height: 70px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                
+                .js-minutes {
+                    @include fs(20px, 600)
+                }
+                
+                p {
+                    @include fs(20px, 700)
+                }
+            }
+
+            .seconds {
+                background-color: #F9F9F9;
+                color: $secondary-color;
+                width: 70px;
+                height: 70px;
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+                
+                .js-seconds {
+                    @include fs(20px, 600)
+                }
+                
+                p {
+                    @include fs(20px, 700)
+                }
+            }
+        }
+    }
+
+    .live_healthy_bg {
+        background: url('../images/Rectangle 3125.png') no-repeat center / cover;
+        padding: 90px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    
+        .live_healthy_text{
+            h2 {
+                @include fs(45px, 700);
+                line-height: 55px;
+            }
+    
+            p {
+                @include para();
+                padding: 10px 0 30px;
+                line-height: 28px;
+            }
+        }
+    
+        .live_healthy_btn {
+            a {
+            @include btn();
+            padding: 10px 30px;
+            }
+        }
+     }
+}
+

@@ -1,0 +1,78 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#banner_two {
+    padding-bottom: 130px;
+    .ban_bg_one {
+        background: url(../images/ban_02.png) no-repeat center / cover;
+        padding: 150px 0 135px;
+        
+        .ban_text {
+            margin-left: 65px;
+            h1 {
+            font-weight: 700;
+            font-size: 75px;
+            line-height: 91px;
+            padding-bottom: 22px;
+    
+            }
+    
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 28px;
+                padding-bottom: 35px;
+                
+            }
+    
+            span {
+                color: $secondary-color;
+            }
+    
+            .ban_btn {
+                a {
+                    background-color: $primary-color;
+                    color: #fff;
+                    font-family: $ff1;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+
+        .ban_bg_two {
+            background: url(../images/banner_03.png) no-repeat center / cover;
+            padding: 45px 0 215px;
+            display: flex;
+            justify-content: flex-end;
+
+            .ban_text {
+                margin-right: 30px;
+                h2 {
+                @include fs(25px, 700);
+            }
+            .ban_btn {
+                padding-top: 20px;
+                a {
+                    background-color: $primary-color;
+                    color: #fff;
+                    font-family: $ff1;
+                    font-weight: 500;
+                    font-size: 20px;
+                    padding: 10px 30px;
+                }
+            }
+        }
+    }
+
+    .ban_bg_three {
+        background: url(../images/ban_04.png) no-repeat center / cover;
+        padding: 169px 0;
+    }
+    .ban_bg_four {
+        background: url(../images/ban_05.png) no-repeat center / cover;
+        padding: 169px 0;
+    }
+}

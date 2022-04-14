@@ -1,0 +1,27 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#choose_us {
+    padding: 130px;
+
+
+    .choose_us_head {
+        padding-bottom: 65px;
+        h2 {
+           @include fs(35px, 700);
+        }
+        
+    }
+
+    .choose_us_item {
+        h3 {
+            @include fs(20px, 500);
+            padding: 50px 0 20px;
+        }
+
+        p {
+            @include para();
+            line-height: 28px;
+        }
+    }
+}

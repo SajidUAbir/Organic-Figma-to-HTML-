@@ -1,0 +1,129 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+#about_ser {
+    position: relative;
+
+    .plus__plus {
+        position: absolute;
+        left: 16.5%;
+        top: 38.8%;
+        transform: translateY(-50%);
+    }
+
+    .line {
+        position: absolute;
+        left: 50%;
+        top: 19%;
+        transform: translate(-50%, -50%);
+    }
+
+    .arrow {
+        position: absolute;
+        right: 16.5%;
+        top: -1%    ;
+        transform: translateY(-50%);
+    }
+
+    .about_ser_item_one {
+        .ser_img {
+            position: relative;
+            width: 142px;
+            height: 142px;
+            line-height: 142px;
+            background-color: #FBFBFB;
+            border-radius: 10px;
+            border: 10px solid #fff;
+            outline: 1px dashed $secondary-color;
+            text-align: center;
+            transform: rotate(-12deg);
+            margin: 0 auto;
+
+            img {
+                position: absolute;
+                left: 47%;
+                top: 56%;
+                transform: rotate(12deg) translate(-50%, -50%);
+            }
+        
+        }
+
+        .about_ser_text {
+            h3 {
+                @include fs(20px, 600);
+                padding: 40px 0 10px;
+            }
+
+            p {
+                @include para();
+                line-height: 28px;
+                padding: 0 50px;
+            }
+        }
+    }
+    .about_ser_item_two {
+        .ser_img {
+            position: relative;
+            width: 190px;
+            height: 190px;
+            line-height: 190px;
+            background-color: #FBFBFB;
+            border-radius: 10px;
+            border: 10px solid #fff;
+            outline: 1px dashed $secondary-color;
+            text-align: center;
+            transform: rotate(-5deg);
+            margin: 0 auto;
+
+            img {
+                position: absolute;
+                left: 47%;
+                top: 56%;
+                transform: rotate(12deg) translate(-50%, -50%);
+            }
+        
+        }
+    }
+    
+    .about_ser_item_three {
+        .ser_img {
+            position: relative;
+            background-color: #FBFBFB;
+            border-radius: 10px;
+            border: 10px solid #fff;
+            outline: 1px dashed $secondary-color;
+            text-align: center;
+            transform: rotate(17deg);
+            margin: 0 auto;
+
+            img {
+                position: absolute;
+                left: 59%;
+                top: 42%;
+                transform: rotate(-17deg) translate(-50%, -50%);
+            }
+        
+        }
+    }
+
+    .about_ser_item_four {
+        .ser_img {
+            position: relative;
+            background-color: #FBFBFB;
+            border-radius: 10px;
+            border: 10px solid #fff;
+            outline: 1px dashed $secondary-color;
+            text-align: center;
+            transform: rotate(77deg);
+            margin: 0 auto;
+
+            img {
+                position: absolute;
+                left: 56%;
+                top: 13%;
+                transform: rotate(-77deg) translate(-50%, -50%);
+            }
+        
+        }
+    }
+}
